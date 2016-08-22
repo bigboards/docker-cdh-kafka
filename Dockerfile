@@ -22,10 +22,10 @@ RUN mkdir -p /etc/hadoop/conf.bb && \
     update-alternatives --set hadoop-conf /etc/hadoop/conf.bb
 VOLUME /etc/hadoop/conf.bb
 
-#RUN mkdir -p /etc/kafka/conf && \
-#    update-alternatives --install /etc/flume-ng/conf flume-ng-conf /etc/flume-ng/conf.bb 1 && \
-#    update-alternatives --set flume-ng-conf /etc/flume-ng/conf.bb
-#VOLUME /etc/flume-ng/conf.bb
+RUN mkdir -p /etc/kafka/conf && \
+    update-alternatives --install /etc/kafka/conf kafka-conf /etc/kafka/conf.bb 1 && \
+    update-alternatives --set kafka-conf /etc/kafka/conf.bb
+VOLUME /etc/kafka/conf.bb
 
 # external ports
 EXPOSE 9393 9092 9093 24042
