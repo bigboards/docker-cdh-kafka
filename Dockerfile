@@ -22,7 +22,7 @@ RUN mkdir -p /etc/hadoop/conf.bb && \
     update-alternatives --set hadoop-conf /etc/hadoop/conf.bb
 VOLUME /etc/hadoop/conf.bb
 
-RUN mkdir -p /etc/kafka/conf && \
+RUN mkdir -p /etc/kafka/conf.bb && \
     update-alternatives --install /etc/kafka/conf kafka-conf /etc/kafka/conf.bb 1 && \
     update-alternatives --set kafka-conf /etc/kafka/conf.bb
 VOLUME /etc/kafka/conf.bb
