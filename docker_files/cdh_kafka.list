@@ -1,3 +1,3 @@
-# Packages for Cloudera's Distribution for kafka, Version 1, on Ubuntu 14.04 amd64
-deb [arch=amd64] http://archive.cloudera.com/kafka/ubuntu/trusty/amd64/kafka trusty-kafka contrib
-deb-src http://archive.cloudera.com/kafka/ubuntu/trusty/amd64/kafka trusty-kafka contrib
+# Packages for Cloudera's Distribution for kafka, Version 2, on Ubuntu 14.04 amd64
+deb [arch=amd64] http://archive.cloudera.com/kafka/ubuntu/trusty/amd64/kafka trusty-kafka2 contrib
+deb-src http://archive.cloudera.com/kafka/ubuntu/trusty/amd64/kafka trusty-kafka2 contrib
