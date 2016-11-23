@@ -11,7 +11,7 @@ RUN chmod a+x /apps/run.sh
 
 RUN apt-key add /tmp/archive.key \
  && apt-get update \
- && apt-get -y install kafka kafka-server \
+ && DEBIAN_FRONTEND=noninteractive apt-get -y install kafka kafka-server \
  && apt-get clean \
  && apt-get autoclean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /var/cache/apt/archives/*.deb
